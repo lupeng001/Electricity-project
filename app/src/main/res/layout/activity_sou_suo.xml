@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".SouSuoActivity">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:orientation="horizontal"
+        >
+    <Button
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        android:background="@drawable/popwindow"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/sousuo_pop"
+        />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ccc"
+            android:id="@+id/sousuo_edit"
+            android:hint="请输入要搜索的商品"
+          />
+    <Button
+        android:id="@+id/sousuo_commmit"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        android:background="@drawable/sousuo"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sousuo_recycler"
+        ></android.support.v7.widget.RecyclerView>
+</LinearLayout>

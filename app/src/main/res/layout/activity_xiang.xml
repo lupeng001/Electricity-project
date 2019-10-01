@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".XiangActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tianjiagouwuche"
+       android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_130"
+        android:id="@+id/car_add"
+        android:background="@drawable/shapes"
+        />
+    <ImageView
+        android:background="@drawable/shapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goumai"
+        android:id="@+id/car_commit"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_150"
+        android:layout_marginRight="5dp"
+        />
+    <LinearLayout
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.stx.xhb.xbanner.XBanner
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_91"
+            android:id="@+id/xiang_xbanner"
+            ></com.stx.xhb.xbanner.XBanner>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/xiang_price"
+                    android:textColor="#ff0000"
+                    android:textSize="20sp"
+                    android:text="价格"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="sss"
+                    android:id="@+id/xiang_shuliang"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="14dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/xiang_name"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginTop="20dp"
+                android:text="商品名称:"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/xiang_height"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginTop="10dp"
+                android:text="重量"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="20dp"
+                    android:text="商品详情"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/xiang_webview"
+            ></WebView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</ScrollView>

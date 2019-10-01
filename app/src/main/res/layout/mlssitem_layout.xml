@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/dp_50"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_marginBottom="@dimen/dp_7"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/dp_60">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="@dimen/dp_90"
+               android:layout_height="@dimen/dp_30"
+               android:src="@drawable/commom_tab_btn_shopping"
+               android:id="@+id/mlssitem_image"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ss"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/mlssitem_image"
+                android:id="@+id/mlssitem_name"
+                android:layout_marginTop="@dimen/dp_3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ss"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_below="@id/mlssitem_name"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/mlssitem_price"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
+
